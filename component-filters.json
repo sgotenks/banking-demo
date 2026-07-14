@@ -46,6 +46,21 @@
     ]
   },
   {
+    "id": "columns-cta",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"

@@ -1,0 +1,14 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "banking-demo": {
+      "previewOrg": "sgotenks",
+      "previewSite": "banking-demo",
+      "aemSitePath": "/content/banking",
+      "aemAssetsFolderPath": "/content/dam/banking",
+      "aemSiteName": "banking",
+      "aemSiteTitle": "Banking",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

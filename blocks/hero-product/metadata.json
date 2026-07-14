@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-product",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-07-14T10:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unicredit.it/it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto.html",
+    "originPage": "mortgage product detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "product-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + subtitle + 1 CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product detail pages",
+      "banking/mortgage product pages",
+      "pages with a full-width photographic hero and overlaid heading + CTA"
+    ],
+    "notSuitableFor": [
+      "text-only intro sections without a background image",
+      "hero sections requiring multiple CTAs or complex forms"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-14T10:38:00.000Z"
+  }
+}

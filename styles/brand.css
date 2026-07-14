@@ -1,0 +1,17 @@
+:root {
+  --heading-font-family: arial, "Helvetica Neue", helvetica, sans-serif;
+  --body-font-family: arial, "Helvetica Neue", helvetica, sans-serif;
+  --background-color: #fff;
+  --text-color: #262626;
+  --link-color: #007a91;
+  --link-hover-color: #005c6e;
+  --brand-primary: #007a91;
+  --section-padding: 40px;
+  --nav-height: 87px;
+  --heading-size-xxl: 40px;
+  --heading-size-xl: 35px;
+  --heading-size-l: 28px;
+  --heading-size-m: 22px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}

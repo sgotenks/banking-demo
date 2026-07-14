@@ -1,0 +1,41 @@
+{
+  "variantName": "columns-cta",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-07-14T10:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unicredit.it/it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto.html",
+    "originPage": "mortgage product detail page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "minimal",
+    "purpose": "cta-strip",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + text (left column) + CTA button (right column)",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "full-width promotional CTA strips with a colored background",
+      "two-column text-plus-button call-to-action bands",
+      "product pages with a closing 'learn more / book appointment' band"
+    ],
+    "notSuitableFor": [
+      "multi-column card grids",
+      "image-heavy side-by-side layouts",
+      "plain body-content columns without a colored background"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-07-14T10:38:00.000Z"
+  }
+}

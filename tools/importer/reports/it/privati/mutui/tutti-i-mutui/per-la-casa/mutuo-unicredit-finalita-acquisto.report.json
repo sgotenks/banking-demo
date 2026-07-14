@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.unicredit.it/it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto.html",
+  "path": "it/privati/mutui/tutti-i-mutui/per-la-casa/mutuo-unicredit-finalita-acquisto",
+  "timestamp": "2026-07-14T16:45:59.152Z",
+  "title": "Mutuo per l'acquisto casa a tasso fisso o variabile | UniCredit",
+  "template": "mortgage-product-page",
+  "blocks": [
+    "hero-product",
+    "columns-cta"
+  ]
+}

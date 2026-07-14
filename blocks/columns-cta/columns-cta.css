@@ -1,0 +1,77 @@
+/* columns-cta: promotional strip — text on the left, CTA button on the right.
+   The teal background + white text are provided at the SECTION level via the
+   `blue-cta` section-metadata style (see styles/styles.css). This block only
+   handles the two-column layout and the white-outline CTA button. */
+
+.columns-cta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* text column: heading + paragraph */
+.columns-cta > div > div:first-child {
+  flex: 1 1 auto;
+}
+
+.columns-cta > div > div :is(h1, h2, h3) {
+  margin: 0 0 8px;
+  font-size: var(--heading-font-size-xl);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.columns-cta > div > div p {
+  margin: 0;
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+/* CTA column */
+.columns-cta > div > div:last-child {
+  flex: 0 0 auto;
+}
+
+.columns-cta > div > div .button-container {
+  margin: 0;
+}
+
+/* white-outline CTA button (source: transparent bg, 2px solid white border,
+   white text, radius 48px, padding 0 24px, height 52px, 18px/400 text) */
+.columns-cta a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  margin: 0;
+  padding: 0 24px;
+  border: 2px solid #fff;
+  border-radius: 48px;
+  background-color: transparent;
+  color: #fff;
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.columns-cta a.button:hover,
+.columns-cta a.button:focus {
+  background-color: #fff;
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .columns-cta > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .columns-cta > div > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

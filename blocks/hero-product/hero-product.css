@@ -1,0 +1,141 @@
+/* hero-product -- background image with a left dark-scrim text panel.
+   Not full-bleed: the block stays inside the section's centered content
+   column (source .pws_visual_product sits within the padded content_in,
+   ~24px side inset, not edge-to-edge). */
+
+/* Values extracted from source .pws_visual_product computed styles (desktop 1292x300). */
+
+/* Block root -- overlay context, holds the background image.
+   Mobile default: taller so an image band shows above the bottom text panel. */
+.hero-product.block {
+  position: relative;
+  min-height: 480px;
+  margin: 0 0 25px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Heading: 35px / 400 / white, no default margin */
+.hero-product.block h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.02;
+}
+
+/* Subtitle: 18px / white */
+.hero-product.block p {
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: var(--body-font-size-m); /* 18px */
+  font-weight: 400;
+  line-height: 1.47; /* 26.4/18 */
+}
+
+.hero-product.block picture {
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-product.block picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 0%; /* anchor right-top, matching source background-position */
+}
+
+/* Row 1 = background image, absolutely positioned behind the panel, full width */
+.hero-product.block > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  margin: 0;
+}
+
+/* Row 2 = text panel with semi-transparent dark scrim.
+   Mobile default: panel pinned to the bottom, full width (source .visible-xs behaviour). */
+.hero-product.block > div:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: rgb(38 38 38 / 65%); /* source overlay scrim */
+  color: #fff;
+}
+
+.hero-product.block > div:first-child > div,
+.hero-product.block > div:first-child p {
+  margin: 0;
+  height: 100%;
+}
+
+.hero-product.block > div:last-child > div {
+  width: 100%;
+}
+
+/* Chevron icon inline, on the same line as the heading (source chevron_red.svg, 40x40) */
+.hero-product.block h2::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('./chevron-red.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px 40px;
+}
+
+/* CTA: teal pill, white text, 18px, height 52px, radius 48px, padding 0 24px */
+.hero-product.block a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin: 16px 0 0;
+  padding: 0 24px;
+  border: none;
+  border-radius: 48px;
+  background-color: var(--brand-primary); /* rgb(0, 122, 145) */
+  color: #fff;
+  font-size: var(--body-font-size-m); /* 18px */
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.hero-product.block a.button:any-link:hover,
+.hero-product.block a.button:any-link:focus {
+  background-color: var(--link-hover-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Desktop: dark text panel confined to the LEFT 50%, full height (source .text_overlay).
+   Chevron+heading+subtitle at top, CTA pushed to bottom via space-between. */
+@media (width >= 900px) {
+  .hero-product.block {
+    min-height: 300px;
+  }
+
+  .hero-product.block > div:last-child {
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 40px 24px;
+  }
+
+  .hero-product.block a.button:any-link {
+    width: auto;
+  }
+}
